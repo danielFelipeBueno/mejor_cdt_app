@@ -112,11 +112,52 @@ a:hover { color: var(--accent-2); }
   background-clip: text;
   color: transparent;
 }
+.hero__credential {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 6px 14px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(255, 184, 0, 0.25);
+  border-radius: 999px;
+  color: #ffd97a;
+  font-size: 13px;
+}
+.hero__credential svg { width: 16px; height: 16px; }
+.hero__credential strong { color: #fff; font-weight: 600; }
+
 .hero__tagline {
-  margin: 16px 0 24px;
+  margin: 14px 0 20px;
   max-width: 60ch;
   color: var(--text-muted);
   font-size: clamp(15px, 1.6vw, 17px);
+}
+.hero__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 20px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  width: fit-content;
+  max-width: 100%;
+}
+.hero__nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.hero__nav a:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
 }
 .hero__cta {
   display: flex;
@@ -260,6 +301,55 @@ a:hover { color: var(--accent-2); }
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+/* Product pillars */
+.card__lead {
+  margin: -4px 0 22px;
+  color: var(--text-muted);
+  max-width: 70ch;
+}
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+.pillar {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+.pillar:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 184, 0, 0.4);
+}
+.pillar__icon {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.pillar__icon svg { width: 18px; height: 18px; }
+.pillar h3 {
+  font-family: "Sora", "Inter", sans-serif;
+  font-size: 15px;
+  margin: 0 0 6px;
+  color: var(--text);
+}
+.pillar p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.product-chips { margin-top: 4px; }
 
 /* Timeline */
 .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }

@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Daniel Bueno — Engineering Lead, Full Stack & Mobile Developer. Flutter, Android/iOS nativo, FastAPI, Node, NestJS, LoopBack." />
+  <meta name="description" content="Daniel Bueno — Engineering Lead, Full Stack & Mobile Developer con foco en producto. Flutter, Android/iOS nativo, FastAPI, Node, NestJS, LoopBack." />
   <meta name="theme-color" content="#0f1115" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Daniel Bueno · Engineering Lead" />
+  <meta property="og:description" content="Engineering Lead con foco en producto. Flutter, Android/iOS nativo, FastAPI, Node, NestJS, LoopBack." />
+  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary" />
   <title>Daniel Bueno · Engineering Lead</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,15 +25,28 @@
         <span class="hero__mono">DB</span>
       </div>
       <div class="hero__text">
-        <p class="hero__eyebrow">Engineering Lead · Full Stack &amp; Mobile</p>
+        <p class="hero__eyebrow">Engineering Lead · Producto · Full Stack &amp; Mobile</p>
         <h1 class="hero__name">
           <span>Daniel</span>
           <span class="hero__name-accent">Bueno</span>
         </h1>
-        <p class="hero__tagline">
-          Lidero el diseño y construcción de productos móviles y plataformas backend.
-          Flutter, Android &amp; iOS nativo, y servicios con FastAPI / Node / NestJS / LoopBack.
+        <p class="hero__credential">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <span><strong>Ingeniero de Sistemas</strong> · Universidad Cooperativa de Colombia</span>
         </p>
+        <p class="hero__tagline">
+          Lidero el diseño, construcción y evolución de productos digitales — apps móviles
+          y plataformas backend — desde el discovery hasta el lanzamiento y las métricas.
+          Flutter, Android &amp; iOS nativo, FastAPI / Node / NestJS / LoopBack.
+        </p>
+
+        <nav class="hero__nav" aria-label="Secciones">
+          <a href="#habilidades">Habilidades</a>
+          <a href="#producto">Producto</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#enfoque">Enfoque</a>
+        </nav>
+
         <div class="hero__cta">
           <a class="btn btn--primary" href="#experiencia">Ver experiencia</a>
           <a class="btn btn--ghost" href="mailto:danielbueno848@gmail.com">Contactarme</a>
@@ -45,8 +63,15 @@
       <section class="card">
         <h2 class="card__title">Sobre mí</h2>
         <p>
-          <strong>Engineering Lead</strong> con más de 5 años de experiencia construyendo
-          aplicaciones móviles multiplataforma y nativas, y plataformas backend en producción.
+          <strong>Ingeniero de Sistemas</strong> y <strong>Engineering Lead</strong> con
+          más de 5 años construyendo productos digitales que combinan apps móviles y
+          plataformas backend en producción.
+        </p>
+        <p>
+          Tengo un <strong>fuerte enfoque en producto</strong>: participo desde el discovery y
+          la definición de funcionalidades hasta la implementación técnica, la validación con
+          usuarios y la medición de resultados. Traduzco necesidades de negocio en soluciones
+          técnicas claras y entregables.
         </p>
         <p>
           Especializado en <strong>Flutter</strong> con dominio de integraciones nativas en
@@ -55,9 +80,9 @@
           <strong>NestJS</strong> y <strong>LoopBack</strong>.
         </p>
         <p>
-          Experto en arquitecturas limpias, patrones BLoC / Redux, y comunicación en tiempo real
-          con WebSockets. Participo en todo el ciclo de vida del producto, garantizando
-          rendimiento, calidad de código, escalabilidad y una experiencia de usuario de alto nivel.
+          Trabajo en arquitecturas limpias, patrones BLoC / Redux y comunicación en tiempo real
+          con WebSockets, siempre buscando el equilibrio entre velocidad de entrega, calidad de
+          código y experiencia de usuario.
         </p>
       </section>
 
@@ -125,8 +150,37 @@
               <li>Flutter / Dart</li>
               <li>Android nativo (Kotlin)</li>
               <li>iOS nativo (Swift)</li>
-              <li>Integraciones nativas</li>
+              <li>Integraciones nativas (Swift / Kotlin)</li>
               <li>BLoC · Cubit · Redux</li>
+              <li>Push notifications</li>
+              <li>Deep linking</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Wearables</h3>
+            <ul class="chips chips--accent">
+              <li>Wear OS (Android)</li>
+              <li>watchOS / Apple Watch</li>
+              <li>WatchKit · SwiftUI</li>
+              <li>HealthKit · CoreMotion</li>
+              <li>Conexiones nativas iPhone ↔ Watch</li>
+              <li>Bluetooth &amp; sensores</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>IA &amp; Machine Learning</h3>
+            <ul class="chips chips--accent">
+              <li>Desarrollo de agentes IA</li>
+              <li>Integración con LLMs (Claude, OpenAI)</li>
+              <li>Function calling &amp; tool use</li>
+              <li>RAG (Retrieval-Augmented Generation)</li>
+              <li>Embeddings &amp; vector DBs</li>
+              <li>Redes neuronales</li>
+              <li>TensorFlow · PyTorch</li>
+              <li>Prompt engineering</li>
+              <li>IA on-device (Core ML / TFLite)</li>
             </ul>
           </article>
 
@@ -186,6 +240,59 @@
         </div>
       </section>
 
+      <section class="card" id="producto">
+        <h2 class="card__title card__title--lg">Producto</h2>
+        <p class="card__lead">
+          Más que escribir código, me importa que los productos resuelvan problemas reales y
+          se midan. Trabajo cercano a diseño, negocio y datos para iterar rápido y con criterio.
+        </p>
+
+        <div class="pillars">
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            </span>
+            <h3>Discovery</h3>
+            <p>Definición de problema, entrevistas con usuarios y exploración de soluciones antes de construir.</p>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </span>
+            <h3>Build &amp; entrega</h3>
+            <p>Scope iterativo, MVPs, releases pequeñas y predecibles. Foco en time-to-value.</p>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
+            </span>
+            <h3>Métricas</h3>
+            <p>Definición de KPIs, instrumentación, experimentación y decisiones basadas en datos.</p>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3>Colaboración</h3>
+            <p>Puente entre producto, diseño e ingeniería. Alineación de prioridades y trade-offs.</p>
+          </article>
+        </div>
+
+        <ul class="chips chips--accent product-chips">
+          <li>Product discovery</li>
+          <li>Definición de funcionalidades</li>
+          <li>Validación con usuarios</li>
+          <li>MVP &amp; iteración</li>
+          <li>Roadmapping</li>
+          <li>OKRs / KPIs</li>
+          <li>A/B testing</li>
+          <li>Analytics</li>
+        </ul>
+      </section>
+
       <section class="card" id="experiencia">
         <h2 class="card__title card__title--lg">Experiencia</h2>
 
@@ -207,6 +314,10 @@
                 con foco en rendimiento y observabilidad.
               </li>
               <li>
+                Participo en el discovery y la definición de funcionalidades, traduciendo
+                necesidades de producto en una arquitectura técnica entregable y medible.
+              </li>
+              <li>
                 Mentoría técnica, revisión de código y alineación entre producto, diseño e
                 ingeniería para entregas predecibles.
               </li>
@@ -225,12 +336,16 @@
                 aplicando Clean Architecture y gestión de estado con BLoC / Cubit.
               </li>
               <li>
+                Integraciones nativas con dispositivos wearables — Apple Watch (watchOS) y
+                Wear OS — para experiencias de actividad física en tiempo real.
+              </li>
+              <li>
                 Diseño e integración de APIs y microservicios con FastAPI, conexión con
                 asistentes de IA e integraciones con servicios externos.
               </li>
               <li>
-                Participación activa en todo el ciclo de producto: desde la definición de
-                funcionalidades hasta la implementación técnica y validación con usuarios.
+                Participación activa en todo el ciclo de producto: definición de funcionalidades,
+                validación con usuarios e iteración basada en métricas.
               </li>
               <li>
                 Comunicación en tiempo real con WebSockets y entrega de experiencias de usuario
